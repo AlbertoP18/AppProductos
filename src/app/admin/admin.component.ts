@@ -12,7 +12,7 @@ export class AdminComponent  implements OnInit{
 
   productos: any[] = [];
   producto = {id: null, nombre: '', precio: 0, cantidad: 0 };
-  apiUrl = 'http://localhost:8080/productos/'; // Reemplaza con tu API real
+  apiUrl = 'http://localhost:8080/productos/'; 
 
   constructor() {}
 
@@ -37,7 +37,8 @@ export class AdminComponent  implements OnInit{
     return true;
   }
 
-  // Crear o editar producto
+
+
   async submitProducto(event: Event) {
     event.preventDefault();
     if (!this.validarProducto()) return;
@@ -48,7 +49,7 @@ export class AdminComponent  implements OnInit{
       await this.createProducto(this.producto);
     }
 
-    this.producto = {id: null, nombre: '', precio: 0, cantidad: 0 }; // Reset form
+    this.producto = {id: null, nombre: '', precio: 0, cantidad: 0 };
     await this.obtenerProductos();
   }
 

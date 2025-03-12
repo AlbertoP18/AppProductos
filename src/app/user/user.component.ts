@@ -11,7 +11,7 @@ export class UserComponent {
 
   productos: any[] = [];
   producto = {id: null, nombre: '', precio: 0, cantidad: 0 };
-  apiUrl = 'http://localhost:8080/productos/'; // Reemplaza con tu API real
+  apiUrl = 'http://localhost:8080/productos/'; 
 
   constructor() {}
 
