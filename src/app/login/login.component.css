@@ -2,12 +2,8 @@
     border-radius: 12px;
   }
   
-  .btn-primary {
-    background-color: #B0B0AE ;
+  .btn-success {
     font-size: 18px;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
   }
   
-  .btn-primary:hover {
-    background-color: #FFAE41;
-  }
